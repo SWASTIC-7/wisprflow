@@ -2,9 +2,8 @@
 
 A cross-platform desktop application for real-time voice-to-text transcription, built with Tauri + React + Deepgram. This is a clone of Wispr Flow, focusing on the core voice-to-text workflow.
 
-![Voice to Text App](./docs/screenshot.png)
 
-## ✨ Features
+## Features
 
 - **Push-to-Talk Voice Input**: Hold the spacebar or click the record button to capture audio
 - **Real-Time Transcription**: Stream audio to Deepgram for instant speech-to-text conversion
@@ -13,7 +12,7 @@ A cross-platform desktop application for real-time voice-to-text transcription, 
 - **Cross-Platform**: Works on Windows, macOS, and Linux
 - **Clean UI**: Modern, intuitive interface with visual recording feedback
 
-## 🏗️ Architecture
+## Architecture
 
 The application follows a clean separation of concerns:
 
@@ -76,11 +75,11 @@ sudo dnf install webkit2gtk4.1-devel openssl-devel curl wget file gtk3-devel lib
 sudo pacman -S webkit2gtk-4.1 base-devel curl wget file openssl gtk3 libappindicator-gtk3 librsvg
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:SWASTIC-7/wisprflow.git
    cd voice-to-text-app
    ```
 
@@ -99,7 +98,7 @@ sudo pacman -S webkit2gtk-4.1 base-devel curl wget file openssl gtk3 libappindic
    npm run tauri build
    ```
 
-## 📖 Usage
+## Usage
 
 1. **Enter your Deepgram API Key** in the input field at the top
 2. **Start Recording**:
@@ -109,7 +108,7 @@ sudo pacman -S webkit2gtk-4.1 base-devel curl wget file openssl gtk3 libappindic
 4. **Copy Text**: Click any individual transcript or use "Copy All"
 5. **Clear**: Use the clear button to start fresh
 
-## ⚙️ Configuration
+## Configuration
 
 ### Deepgram Settings
 
@@ -137,36 +136,3 @@ audio: {
   channelCount: 1
 }
 ```
-
-## 🐛 Known Limitations
-
-1. **Browser Permissions**: The app requires microphone permission on first run
-2. **Network Dependency**: Requires internet connection for Deepgram API
-3. **Single Language**: Currently supports one language at a time (configurable)
-4. **No Offline Mode**: Transcription requires Deepgram API connection
-
-## 🔧 Troubleshooting
-
-### Microphone not working
-- Ensure microphone permissions are granted in your OS settings
-- Check if another application is using the microphone
-
-### Connection errors
-- Verify your Deepgram API key is correct
-- Check your internet connection
-- Ensure you have API credits remaining
-
-### Build errors on Linux
-- Install all system dependencies listed in Prerequisites
-- Make sure webkit2gtk-4.1 is installed (not 4.0)
-
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE) for details
-
-## 🙏 Acknowledgments
-
-- [Tauri](https://tauri.app/) - Desktop framework
-- [Deepgram](https://deepgram.com/) - Speech-to-text API
-- [React](https://react.dev/) - UI framework
-- [Wispr Flow](https://www.wispr.ai/) - Inspiration
