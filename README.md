@@ -52,7 +52,7 @@ src-tauri/
 
 5. **Push-to-Talk**: Implemented as the primary interaction model to give users explicit control over when recording occurs.
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 - [Node.js](https://nodejs.org/) (v18 or later)
 - [Rust](https://www.rust-lang.org/tools/install) (latest stable)
