@@ -17,7 +17,7 @@ pub fn run() {
             {
                 let window = app.get_webview_window("main").unwrap();
                 window.with_webview(|webview| {
-                    use webkit2gtk::{PermissionRequest, WebViewExt};
+                    use webkit2gtk::{ WebViewExt};
                     
                     // Get the WebView and connect to permission-request signal
                     let wv = webview.inner();
