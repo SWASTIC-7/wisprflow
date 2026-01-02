@@ -2,6 +2,8 @@
 
 A cross-platform desktop application for real-time voice-to-text transcription, built with Tauri + React + Deepgram. This is a clone of Wispr Flow, focusing on the core voice-to-text workflow.
 
+[demo video](https://youtu.be/Ywe8sOQ-BgI)
+
 
 ## Features
 
